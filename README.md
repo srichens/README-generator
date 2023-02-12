@@ -1,10 +1,10 @@
-# XXX
+# Y
 
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  
 
 
 ## Description
-x
+y
 
 
 
@@ -17,19 +17,18 @@ x
 6. [Questions](#questions)
 
 ## Installation
-x
+y
 
 ## Usage
-x
+y
 
-## License
-    This product is licensed under MIT
+
 
 ## Contributing
-x
+y
 
 ## Tests
-x
+y
 
 ## Questions
-Contact me at x or view my projects at x
+Contact me at y or view my projects at y

@@ -1,8 +1,8 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// function that returns a license badge based on which license is passed in
+// If there is no license, returns an empty string
 
 function renderLicenseBadge(license) {  
-  if(!license || license == 'None') {
+  if(license == 'None') {
    return ``; 
   } else {
     return `[![License: ${license}](https://img.shields.io/badge/License-${license}-yellow.svg)](${renderLicenseLink(license)})`
@@ -10,20 +10,20 @@ function renderLicenseBadge(license) {
   
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// function that returns the license link
+// If there is no license, returns an empty string
 function renderLicenseLink(license) {
-  if(!license || license == 'None') {
+  if(license == 'None') {
     return ``; 
   } else {
     return `https://opensource.org/licenses/${license}`;    
   }
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// function that returns the license section of README
+// If there is no license, returns an empty string
 function renderLicenseSection(license) {
-  if(!license || license == 'None') {
+  if(license == 'None') {
     return ``; 
   } else {
     return `## License
@@ -31,15 +31,15 @@ function renderLicenseSection(license) {
   }
 }
 
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
+// function to generate markdown for README
+function generateMarkdown(answers) {
+  return `# ${answers.title}
 
-  ${renderLicenseBadge(data.license)}
+  ${renderLicenseBadge(answers.license)}
 
 
 ## Description
-${data.description}
+${answers.description}
 
 
 
@@ -52,21 +52,21 @@ ${data.description}
 6. [Questions](#questions)
 
 ## Installation
-${data.installation}
+${answers.installation}
 
 ## Usage
-${data.usage}
+${answers.usage}
 
-${renderLicenseSection(data.license)}
+${renderLicenseSection(answers.license)}
 
 ## Contributing
-${data.contribution}
+${answers.contribution}
 
 ## Tests
-${data.test}
+${answers.test}
 
 ## Questions
-Contact me at ${data.email} or view my projects at ${data.github}
+Contact me at ${answers.email} or view my projects at ${answers.github}
 `;
 }
 
