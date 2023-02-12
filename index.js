@@ -87,7 +87,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Which license would you like to use?',
-        choices: ['dumb', 'dumb', 'dumb'],
+        choices: ['MIT', 'ISC', 'Zlib', 'None'],
         validate: input => {
             if (input) {
                 return true;
