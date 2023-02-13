@@ -31,7 +31,17 @@ function renderLicenseSection(license) {
   }
 }
 
+// function to add Table of Contents depending on whether or not there is a license
+function renderLicenseTOC(license) {
+  if(license == 'None') {
+    return `1. [Installation](#installation)\n2. [Usage](#usage)\n3. [Contributing](#contributing)\n4. [Tests](#tests)\n5. [Questions](#questions?)`; 
+  } else {
+    return `1. [Installation](#installation)\n2. [Usage](#usage)\n3. [License](#license)\n4. [Contributing](#contributing)\n5. [Tests](#tests)\n6. [Questions](#questions?)`
+  }
+}
+
 // function to generate markdown for README
+// defines fileName outside of markdown since it won't be included in the README - just used for the writeToFile function
 function generateMarkdown(answers) {
   fileName = answers.fileName;
   return `# ${answers.title}
@@ -46,12 +56,7 @@ ${answers.description}
 
 
 ## Table of Contents
-1. [Installation](#installation)
-2. [Usage](#usage)
-3. [License](#license)
-4. [Contributing](#contributing)
-5. [Tests](#tests)
-6. [Questions](#questions?)
+${renderLicenseTOC(answers.license)}
 
 ## Installation
 ${answers.installation}
