@@ -10,6 +10,7 @@ const generateMarkdown = require('./utils/generateMarkdown');
 // the validate function ensures the user provides input
 // the license question uses the list type, so rather than inputting text, one answer is chosen from the list
 // 'None' is included in the list of licenses, so that you can choose not to include a license
+// fileName question allows user to determine where they want their readme to be saved and what they want the file to be named
 const questions = [
     {
         type: 'input',
@@ -128,12 +129,27 @@ const questions = [
                 return false;
             }
         }          
-    }                             
+    },    
+    {
+        type: 'input',
+        name: 'fileName',
+        message: 'Where would you like your README file saved? Include file path and file name',
+        validate: input => {
+            if (input) {
+                return true;
+            } else {
+                console.log('Please enter a file path');
+                return false;
+            }
+        }          
+    }                    
     ];
 
+    
 // function to write README file 
-function writeToFile(data) {    
-    fs.writeFile('README.md', data, (err) =>
+// uses the fileName answer defined in the generateMarkdown function
+function writeToFile(data) {        
+    fs.writeFile(fileName, data, (err) =>
     err ? console.log(err) : console.log('Your README has been created'))
 };
 
@@ -145,7 +161,7 @@ function init() {
     inquirer
         .prompt(questions) 
         .then(answers => {
-            return generateMarkdown(answers);                     
+            return generateMarkdown(answers);                                 
         })
         .then(readMeText => {
             return writeToFile(readMeText);            

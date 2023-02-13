@@ -1,10 +1,11 @@
-# README generator
+# t
+  
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
 ## Description
-a CLI app to generate a high-quality professional README
+t
 
 
 
@@ -14,22 +15,22 @@ a CLI app to generate a high-quality professional README
 3. [License](#license)
 4. [Contributing](#contributing)
 5. [Tests](#tests)
-6. [Questions](#questions)
+6. [Questions](#questions?)
 
 ## Installation
-install node.js and npm
+t
 
 ## Usage
-see the video below for a guide
+t
 
 ## License
     This product is licensed under MIT
 
 ## Contributing
-If you would like to contribute, please follow these contribution guidelines
+t
 
 ## Tests
-test with npm
+t
 
-## Questions
-Contact me at sarahgrichens@gmail.com or view my projects at srichens@github
+## Questions?
+Contact me at t or view my projects at t

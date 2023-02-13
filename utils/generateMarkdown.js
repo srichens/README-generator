@@ -33,7 +33,9 @@ function renderLicenseSection(license) {
 
 // function to generate markdown for README
 function generateMarkdown(answers) {
+  fileName = answers.fileName;
   return `# ${answers.title}
+  
 
   ${renderLicenseBadge(answers.license)}
 
@@ -49,7 +51,7 @@ ${answers.description}
 3. [License](#license)
 4. [Contributing](#contributing)
 5. [Tests](#tests)
-6. [Questions](#questions)
+6. [Questions](#questions?)
 
 ## Installation
 ${answers.installation}
@@ -65,7 +67,7 @@ ${answers.contribution}
 ## Tests
 ${answers.test}
 
-## Questions
+## Questions?
 Contact me at ${answers.email} or view my projects at ${answers.github}
 `;
 }
