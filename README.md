@@ -19,16 +19,16 @@ This week's challenge was to write a command-line application to generate a prof
 ## Usage
 To use the app, before cloning the repository, make sure you have node.js and npm installed.
 
-The video below walks through the steps to use the app. To summarize:
+The video linked below walks through the steps to use the app. To summarize:
 1. Start the app by opening the index.js folder in the terminal. 
 2. Then in the terminal, type in node index.js. This will prompt the questions. Type your answers into the terminal.
 3. When you have answered all of the questions, and you see a confirmation in the terminal that your file has been created, navigate to the folder you indicated in the file path question, and you will see your new README file.
 
-(video here)
+* Note that the walkthrough video first generates a README that includes a license, but then goes through the steps to generate another README to show what happens when no license is chosen. If you don't choose a license (the 'None' option in the license question), the License section will not show on the README, the Table of Contents will not include the License section, and the badge and link to the license will not show at the top. 
 
-You can also view a link to the video here
+[Link to README Generator Demo Video](https://watch.screencastify.com/v/0QkZw8Cjx3QagYrNy3qB)
 
-* Note that the walkthrough video chooses a license, but there is an option to not choose one. If you don't choose a license (the 'None' option in the license question), the License section will not show on the README, the Table of Contents will not include the License section, and the badge and link to the license will not show at the top. 
+
 
 ## Highlights of Process
 1. Note: This homework project included a small bit of starter code and a few instructions to follow to help get going:
