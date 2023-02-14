@@ -1,11 +1,11 @@
-# t
+# Professional README Generator
   
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
 ## Description
-t
+This command-line application generates a README file, taking user input and placing the information into a README template.
 
 
 
@@ -18,19 +18,19 @@ t
 6. [Questions](#questions?)
 
 ## Installation
-t
+Before cloning the repository, make sure to have node.js and npm installed.
 
 ## Usage
-t
+Open index.js in the terminal. Type in node index.js in the terminal. Answer the question prompts to generate the file.
 
 ## License
     This product is licensed under MIT
 
 ## Contributing
-t
+Please refer to the [Contributor Covenant] (https://www.contributor-covenant.org/).
 
 ## Tests
-t
+Use Jest for testing. Enter npm i in the terminal to install, and then npm run test to run tests.
 
 ## Questions?
-Contact me at t or view my projects at t
+Contact me at sarahgrichens@gmail.com or view my projects at https://github.com/srichens

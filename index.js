@@ -133,7 +133,7 @@ const questions = [
     {
         type: 'input',
         name: 'fileName',
-        message: 'Where would you like your README file saved? Include file path and file name',
+        message: 'Where would you like your README file saved? Include file path and file name:',
         validate: input => {
             if (input) {
                 return true;

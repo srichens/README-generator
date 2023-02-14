@@ -27,16 +27,16 @@ function renderLicenseSection(license) {
     return ``; 
   } else {
     return `## License
-    This product is licensed under ${license}`
+    This product is licensed under ${license}.`
   }
 }
 
 // function to add Table of Contents depending on whether or not there is a license
 function renderLicenseTOC(license) {
   if(license == 'None') {
-    return `1. [Installation](#installation)\n2. [Usage](#usage)\n3. [Contributing](#contributing)\n4. [Tests](#tests)\n5. [Questions](#questions?)`; 
+    return `1. [Installation](#installation)\n2. [Usage](#usage)\n3. [Contributing](#contributing)\n4. [Tests](#tests)\n5. [Questions](#questions)`; 
   } else {
-    return `1. [Installation](#installation)\n2. [Usage](#usage)\n3. [License](#license)\n4. [Contributing](#contributing)\n5. [Tests](#tests)\n6. [Questions](#questions?)`
+    return `1. [Installation](#installation)\n2. [Usage](#usage)\n3. [License](#license)\n4. [Contributing](#contributing)\n5. [Tests](#tests)\n6. [Questions](#questions)`
   }
 }
 
@@ -72,8 +72,8 @@ ${answers.contribution}
 ## Tests
 ${answers.test}
 
-## Questions?
-Contact me at ${answers.email} or view my projects at ${answers.github}
+## Questions
+If you have any questions, please contact me at ${answers.email} or view my projects at ${answers.github}.
 `;
 }
 
