@@ -1,5 +1,7 @@
 # README Generator
 
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## Bootcamp Challenge Week 9
 This week's challenge was to write a command-line application to generate a professional README file with the following requirements:
 1. Invoke the app using node.js.
@@ -20,11 +22,14 @@ This week's challenge was to write a command-line application to generate a prof
 To use the app, before cloning the repository, make sure you have node.js and npm installed.
 
 The video linked below walks through the steps to use the app. To summarize:
+
+*Please note that I include a sample README in the sample readme folder that was generated in the video - that is in addition to this main README for the project*
+
 1. Start the app by opening the index.js folder in the terminal. 
 2. Then in the terminal, type in node index.js. This will prompt the questions. Type your answers into the terminal.
 3. When you have answered all of the questions, and you see a confirmation in the terminal that your file has been created, navigate to the folder you indicated in the file path question, and you will see your new README file.
 
-* Note that the walkthrough video first generates a README that includes a license, but then goes through the steps to generate another README to show what happens when no license is chosen. If you don't choose a license (the 'None' option in the license question), the License section will not show on the README, the Table of Contents will not include the License section, and the badge and link to the license will not show at the top. 
+* Note that the walkthrough video FIRST generates a README that includes a license, but THEN goes through the steps to generate another README to show what happens when no license is chosen. If you don't choose a license (the 'None' option in the license question), the License section will not show on the README, the Table of Contents will not include the License section, and the badge and link to the license will not show at the top. 
 
 [Link to README Generator Demo Video](https://watch.screencastify.com/v/0QkZw8Cjx3QagYrNy3qB)
 
